@@ -6,35 +6,48 @@ import Button from "./Button";
 function HeroSection() {
   return (
     <section
-      className="relative bg-red-700 text-white py-24 px-4 lg:px-16"
+      className="relative bg-red-700 text-white py-16 px-4 lg:px-16"
       style={{
         backgroundImage: `url(${bgImg})`,
         backgroundSize: "cover",
       }}
     >
-      <div className="container flex flex-col lg:flex-row items-center w-3/4 mx-auto">
-        <div className="lg:w-full space-y-4 lg:space-y-6">
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-wide title uppercase hero-heading">
+      <div className="container flex flex-col lg:flex-row items-center w-full max-w-6xl mx-auto space-y-8 lg:space-y-0 lg:space-x-12">
+        {/* Text Section */}
+        <div className="lg:w-1/2 space-y-4 lg:space-y-6 text-start lg:text-left">
+          <h1 className="text-3xl lg:text-5xl font-bold tracking-wide uppercase leading-tight">
             Taste the Authentic Saudi Cuisine
           </h1>
-          <p className="text-lg lg:text-xl">
+          <p className="text-base lg:text-lg">
             Among the best Saudi chefs in the world, serving you something
             beyond flavor.
           </p>
-          <Button text="Explore Menu" />
+          <Button
+            text="Explore Menu"
+            className="bg-yellow-500 text-black px-4 py-2 rounded-md"
+          />
         </div>
-        <div className="lg:w-1/2 relative mt-8 lg:mt-0 flex justify-center items-center">
+
+        {/* Image Section */}
+        <div className="lg:w-1/2 relative flex justify-center items-center">
           <div className="relative">
             <img
               src={foodImage}
               alt="Delicious Food"
-              className="rounded-lg shadow-lg max-w-full lg:max-w-lg"
+              className="rounded-lg shadow-lg max-w-full"
             />
             <div
-              className="absolute bottom-4 right-5 bg-yellow-500 text-black font-bold w-24 h-24 rounded-full shadow-lg flex items-center justify-center text-center uppercase"
-              style={{ transform: "translate(70%, 20%)" }}
+              className="absolute bottom-4 right-4 bg-yellow-500 text-black font-bold rounded-full shadow-lg flex items-center justify-center text-center uppercase w-16 h-16 lg:w-24 lg:h-24"
+              style={{
+                transform:
+                  window.innerWidth >= 1024
+                    ? "translate(70%, 20%)"
+                    : "translate(20%, 20%)",
+              }}
             >
-              <span className="text-m leading-tight">Today Offer</span>
+              <span className="text-xs lg:text-lg leading-tight">
+                Today Offer
+              </span>
             </div>
           </div>
         </div>
