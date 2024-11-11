@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection";
 import Services from "./components/Services";
 import PopularFoodItems from "./components/PopularItems";
 import BookingTable from "./components/BookingTable";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <PopularFoodItems />
       <BookingTable />
+      <Testimonials />
     </div>
   );
 }
