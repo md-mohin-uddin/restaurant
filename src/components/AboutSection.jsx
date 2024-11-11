@@ -38,7 +38,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
-      <div className="lg:w-80 mt-8 lg:mt-0">
+      <div className="lg:w-1/3 mt-8 lg:mt-0">
         <div className="flex space-x-4 border-b pb-2">
           <a
             href="#"
@@ -61,15 +61,14 @@ function AboutSection() {
           sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque
           bibendum viverra tempus.
         </p>
-        <div className="flex items-center mt-6 space-x-4">
-          <Button text="ABOUT MORE" />
-          <span className="text-gray-800 font-bold">
-            <FontAwesomeIcon
-              icon={faPhone}
-              className="text-yellow-500 w-3 h-3"
-            />{" "}
+        <div className="flex items-center justify-evenly">
+          <div className="">
+            <Button text="ABOUT MORE" />
+          </div>
+          <div className="text-gray-800 font-bold text-xl mt-5 ">
+            <FontAwesomeIcon icon={faPhone} className="text-red-500 w-3 h-3" />{" "}
             +88 3426 739 485
-          </span>
+          </div>
         </div>
       </div>
     </section>
