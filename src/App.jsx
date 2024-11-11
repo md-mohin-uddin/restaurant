@@ -6,6 +6,8 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import Services from "./components/Services";
 import PopularFoodItems from "./components/PopularItems";
+import BookingTable from "./components/BookingTable";
+
 function App() {
   return (
     <div className="font-roboto text-white">
@@ -14,6 +16,7 @@ function App() {
       <AboutSection />
       <Services />
       <PopularFoodItems />
+      <BookingTable />
     </div>
   );
 }
