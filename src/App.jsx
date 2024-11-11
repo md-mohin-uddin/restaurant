@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import PopularFoodItems from "./components/PopularItems";
 import BookingTable from "./components/BookingTable";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <PopularFoodItems />
       <BookingTable />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
