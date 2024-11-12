@@ -8,20 +8,21 @@ import "react-circular-progressbar/dist/styles.css";
 
 function AboutSection() {
   return (
-    <section className="w-3/4 mx-auto my-6 p-6 lg:flex lg:space-x-12">
-      <div className="lg:w-1/2 flex justify-evenly">
-        <div className="relative mb-6 lg:mb-0">
+    <section className="w-11/12 mx-auto my-6 p-4 lg:p-6 lg:flex lg:space-x-12">
+      {/* Image Section */}
+      <div className="lg:w-1/2 flex justify-center lg:justify-evenly mb-8 lg:mb-0">
+        <div className="relative">
           <img
             src={aboutImage}
             alt="Delicious Food"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg w-full max-w-xs lg:max-w-full"
           />
-          <div className=" absolute top-4 left-4 bg-white p-2 rounded-lg shadow-lg  flex items-center space-x-4">
-            <div style={{ width: 70, height: 70 }}>
+          <div className="absolute top-4 left-4 bg-white p-2 rounded-lg shadow-lg flex items-center space-x-4">
+            <div style={{ width: 50, height: 50 }} className="lg:w-16 lg:h-16">
               <CircularProgressbar
                 value={80}
                 maxValue={100}
-                text="50"
+                text="50+"
                 styles={buildStyles({
                   pathColor: "#FFC107",
                   trailColor: "#e0e0e0",
@@ -31,15 +32,18 @@ function AboutSection() {
                 })}
               />
             </div>
-            <div>
+            <div className="hidden lg:block">
               <p className="text-lg text-black font-semibold">Market</p>
               <p className="text-lg text-black font-semibold">Experiences</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 mt-8 lg:mt-0">
-        <div className="flex space-x-4 border-b pb-2">
+
+      {/* Text Section */}
+      <div className="lg:w-1/3 space-y-6 lg:space-y-8">
+        {/* Tabs */}
+        <div className="flex justify-around lg:justify-start lg:space-x-4 border-b pb-2">
           <a
             href="#"
             className="text-red-600 font-bold border-b-2 border-red-600 pb-2"
@@ -53,20 +57,22 @@ function AboutSection() {
             Contact
           </a>
         </div>
-        <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mt-4 title">
+
+        {/* Content */}
+        <h2 className="text-xl lg:text-3xl font-bold text-gray-800 mt-4 lg:mt-0">
           EXCEPTIONAL CULINARY EXPERIENCE AND DELICIOUS FOOD
         </h2>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non
           sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque
           bibendum viverra tempus.
         </p>
-        <div className="flex items-center justify-evenly">
-          <div className="">
-            <Button text="ABOUT MORE" />
-          </div>
-          <div className="text-gray-800 font-bold text-xl mt-5 ">
-            <FontAwesomeIcon icon={faPhone} className="text-red-500 w-3 h-3" />{" "}
+
+        {/* Button and Contact */}
+        <div className="flex flex-col lg:flex-row items-center justify-start space-y-4 ">
+          <Button text="ABOUT MORE" />
+          <div className="text-gray-800 font-bold text-base lg:text-xl flex items-center ml-3">
+            <FontAwesomeIcon icon={faPhone} className="text-red-500 mr-1" />
             +88 3426 739 485
           </div>
         </div>
