@@ -31,7 +31,14 @@ function Header() {
       </nav>
 
       {/* Book a Table Button for Desktop */}
-      <button className="hidden lg:block bg-yellow-500 text-black font-bold px-4 py-2 rounded-md">
+      <button
+        className="hidden lg:block bg-yellow-500 text-black font-bold px-4 py-2 rounded-md"
+        onClick={() => {
+          document.getElementById("booking-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        }}
+      >
         BOOK A TABLE
       </button>
 

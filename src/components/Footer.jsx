@@ -12,6 +12,8 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
+  faGit,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -80,25 +82,25 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex justify-center space-x-4 mt-6">
             <a
-              href="#"
+              href="https://github.com/md-mohin-uddin"
               className="border border-gray-500 rounded-full p-3 text-lg hover:bg-yellow-500"
             >
-              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="#"
+              href="https://x.com/M_Mohin_Uddin"
               className="border border-gray-500 rounded-full p-3 text-lg hover:bg-yellow-500"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/md__mohin__uddin"
               className="border border-gray-500 rounded-full p-3 text-lg hover:bg-yellow-500"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/mdmohinuddin/"
               className="border border-gray-500 rounded-full p-3 text-lg hover:bg-yellow-500"
             >
               <FontAwesomeIcon icon={faLinkedin} />

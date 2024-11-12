@@ -22,10 +22,16 @@ function HeroSection() {
             Among the best Saudi chefs in the world, serving you something
             beyond flavor.
           </p>
-          <Button
-            text="Explore Menu"
-            className="bg-yellow-500 text-black px-4 py-2 rounded-md"
-          />
+          <button
+            className="hidden lg:block bg-yellow-500 text-black font-bold px-4 py-2 rounded-md"
+            onClick={() => {
+              document.getElementById("popular-item").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            EXPLORE MENU
+          </button>
         </div>
 
         {/* Image Section */}
@@ -42,7 +48,7 @@ function HeroSection() {
                 transform:
                   window.innerWidth >= 1024
                     ? "translate(70%, 20%)"
-                    : "translate(20%, 20%)",
+                    : "translate(10%, 20%)",
               }}
             >
               <span className="text-xs lg:text-lg leading-tight">

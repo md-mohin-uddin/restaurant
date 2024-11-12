@@ -48,7 +48,7 @@ const PopularFoodItems = () => {
   };
 
   return (
-    <section className="bg-[#F9F5F0] py-16 px-8 mt-5">
+    <section className="bg-[#F9F5F0] py-16 px-8 mt-5" id="popular-item">
       <div className="lg:w-3/4 mx-auto">
         <div className="flex justify-between items-center mb-8">
           <div className="text-left">
@@ -73,7 +73,7 @@ const PopularFoodItems = () => {
                 key={index}
                 className={`${
                   index === currentIndex ? "block" : "hidden"
-                } sm:block lg:block`}
+                } sm:block lg:block `}
               >
                 <FoodItem
                   image={item.image}
