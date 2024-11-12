@@ -24,8 +24,8 @@ const Footer = () => {
 
       <div className="relative z-10">
         <div className="container w-full mx-auto text-center">
-          <h1 className="title uppercase text-3xl md:text-4xl font-bold mb-8 text-white">
-            We’re Ready to Offer You the Best Dining Experiences
+          <h1 className="title uppercase text-2xl md:text-4xl font-bold mb-8 text-white">
+            We ready to have you the best dining experiences
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
