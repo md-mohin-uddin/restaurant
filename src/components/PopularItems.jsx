@@ -109,12 +109,8 @@ const PopularFoodItems = () => {
 
 const FoodItem = ({ image, title, description }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-8 text-center">
-      <img
-        src={image}
-        alt={title}
-        className="mx-auto mb-4 w-32 h-32 object-cover"
-      />
+    <div className="bg-white rounded-lg shadow-md p-8 text-center h-80 flex flex-col items-center justify-between">
+      <img src={image} alt={title} className="mb-4 w-32 h-32 object-cover" />
       <h3 className="text-xl font-bold" style={{ color: "#0a1425" }}>
         {title}
       </h3>
